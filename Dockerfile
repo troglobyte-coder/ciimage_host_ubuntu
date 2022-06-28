@@ -24,8 +24,6 @@ RUN apt-get update --fix-missing && apt-get dist-upgrade -y \
        python3-pip \
        gcc-12 \
        g++-12 \
-       gdc \
-       dub \
        git \
        ccache \
        cppcheck \
@@ -37,5 +35,4 @@ RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
        meson==0.62.0 \
        scan-build==2.0.19 \
-       ninja==1.10.2 \
-       cmake==3.21.2
+       ninja==1.10.2
